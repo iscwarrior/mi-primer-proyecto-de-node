@@ -1,0 +1,20 @@
+{
+  "name": "mi-primer-proyecto-de-node",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Node (paquete node) los scrips estan en ubicaciones relativas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo 'Testeando'",
+    "dev": "echo 'estamos en modo desarrollo'"
+  },
+  "keywords": [
+    "kodemia"
+  ],
+  "author": "iscwarrior",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.3",
+    "yargs-parser": "^21.1.1"
+  }
+}
