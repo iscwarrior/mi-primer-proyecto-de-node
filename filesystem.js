@@ -33,3 +33,21 @@ fs.appendFile('message.txt', 'data to append', 'utf8', (err,data)=> {
     // si leyo ben el contenido imprime el contenido
     console.log("Data",data)
 });
+
+fs.unlink('./file.txt', (err) => {
+    if (err) throw err;
+    console.log('./file.txt was deleted');
+  });
+
+fs.copyFile('./message.txt', 'destinationxD.txt', (err,data)=> {
+    if(err){
+        console.log(err)
+        return; // sirve para salir
+    }
+    // si leyo ben el contenido imprime el contenido
+    console.log("Data",data)
+});
+
+fs.mkdir('apple/', { recursive: true }, (err) => {
+    if (err) throw err;
+  });

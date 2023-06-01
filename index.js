@@ -5,9 +5,9 @@
 // const color = Color.rgb(255, 255, 255)
 // const color = Color.rgb([255, 255, 255])
 
-const argv = require("yargs-parser")(process.argv.slice(2))
+const argv  = require("yargs-parser")(process.argv.slice(2))
 const Color = require('color');
-console.log(argv)
+// console.log(argv)
 
 const nombre = argv.nombre
 const apellido = argv.apellido
