@@ -24,3 +24,12 @@ fs.writeFile('message.txt', 'Hello Node.js', 'utf8', (err,data)=> {
     // si leyo ben el contenido imprime el contenido
     console.log("Data",data)
 });
+
+fs.appendFile('message.txt', 'data to append', 'utf8', (err,data)=> {
+    if(err){
+        console.log(err)
+        return; // sirve para salir
+    }
+    // si leyo ben el contenido imprime el contenido
+    console.log("Data",data)
+});
