@@ -51,3 +51,12 @@ fs.copyFile('./message.txt', 'destinationxD.txt', (err,data)=> {
 fs.mkdir('apple/', { recursive: true }, (err) => {
     if (err) throw err;
   });
+
+  fs.readdir('directory/', 'utf8', (err,files)=> {
+    if(err){
+        console.log(err)
+        return; // sirve para salir
+    }
+    // si leyo ben el contenido imprime el contenido
+    console.log("files",files)
+});
