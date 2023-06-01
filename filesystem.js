@@ -59,4 +59,8 @@ fs.mkdir('apple/', { recursive: true }, (err) => {
     }
     // si leyo ben el contenido imprime el contenido
     console.log("files",files)
+    files.forEach(file=> {
+        leerArchivo(`directory/${file}`)
+    })
+
 });

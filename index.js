@@ -6,13 +6,13 @@
 // const color = Color.rgb([255, 255, 255])
 
 const argv  = require("yargs-parser")(process.argv.slice(2))
-const Color = require('color');
+const colors = require('colors');
 // console.log(argv)
 
 const nombre = argv.nombre
 const apellido = argv.apellido
 
-console.log(`Nombre: ${nombre}, Apellido: ${apellido}`);
+// console.log(`Nombre: ${nombre}, Apellido: ${apellido}`);
 
 // const nombre = process.argv[2];
 const nombres = [
@@ -39,7 +39,7 @@ const nombres = [
 
 function findName(nombre) {
     console.log("Estamos en la funcion findName con el nombnre =>", nombre);
-    const existe = nombre.includes(nombre);
+    const existe = nombres.includes(nombre);
     if (existe) {
         console.log("Bienvenido".red);
         return;
@@ -47,6 +47,4 @@ function findName(nombre) {
     console.log("Fuera de aqui".blue);
 }
 
-findName((nombre))
-
-
+findName(nombre)
