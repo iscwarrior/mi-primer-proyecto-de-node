@@ -1,11 +1,12 @@
 // console.log("Mi primer proyecto con NODE"){}
-const Color = require('color');
+
 // const color = Color('rgb(255, 155, 55)')
 // const color = Color({r: 255, g: 255, b: 255})
 // const color = Color.rgb(255, 255, 255)
 // const color = Color.rgb([255, 255, 255])
 
 const argv = require("yargs-parser")(process.argv.slice(2))
+const Color = require('color');
 console.log(argv)
 
 const nombre = argv.nombre
